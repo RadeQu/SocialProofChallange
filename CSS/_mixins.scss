@@ -1,0 +1,36 @@
+@mixin flex($align, $justify, $dir) {
+    display: flex;
+    justify-content: $justify;
+    align-content: $align;
+    flex-direction: $dir;
+    
+}
+@mixin circle  {
+    border-radius: 50%;
+    margin: 10% 2% 0 7%;
+    display: flex;
+    width: 65px;
+}
+@mixin stars($percent) {
+    background-color: $Light_Grayish_Magenta;
+    width: 150%;
+    line-height: 350%;
+    margin: 0 0 10% 0;
+    transform: translate($percent);
+    color: $Very_Dark_Magenta;
+    font-weight: 700;
+    border-radius: 15px;
+}
+@mixin starsMobile{
+    background-color: $Light_Grayish_Magenta;
+    width: 90%;
+    line-height: 300%;
+    margin: 2% auto;
+    border-radius: 15px;
+    color: $Very_Dark_Magenta;
+    font-weight: 700;
+}
+@mixin starsIcon  {
+    content:  url(../images/icon-star.svg);
+    margin-right: 5%;
+}
